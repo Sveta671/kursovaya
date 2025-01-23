@@ -1,0 +1,318 @@
+body {
+  background: linear-gradient(to bottom, white, rgb(255, 255, 255), rgb(211, 209, 209), rgb(177, 177, 177), rgb(105, 105, 105), rgb(0, 0, 0), black);
+  min-height: 100vh;
+}
+
+
+.site-name h2{
+    font-family: 'Grenze';
+    color: black;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+p{
+    font-weight: 1000;
+    font-family: 'Grenze';
+    color: #000;
+}
+
+
+.site-name h2{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+h2{
+  padding: 0;
+   margin: 0;
+    justify-content: center; /* Выравниваем по центру горизонтально */  
+  padding: 30px 0;
+    color: #000;
+   }
+
+.search {
+  display: flex;
+  align-items: center; 
+  border: 2px solid #ffffff; 
+  border-radius: 25px; 
+  padding: 5px;
+  background-color: #969696; 
+  max-width: 400px; 
+}
+
+.search-input {
+  flex: 1; 
+  border: none; 
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent; 
+  color: #111111;
+}
+
+.search-input:focus {
+  outline: none; 
+}
+
+
+.search-button {
+  background-color: #000000; 
+  color: white; 
+  border: none; 
+  padding: 8px 15px; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #777777; 
+}
+
+
+.search-center {
+  justify-self: center; 
+}
+
+
+
+.nav-list {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Выравниваем по центру горизонтально */
+  padding: 20px 0;
+  display: flex; /* Делаем список flex-контейнером */
+    gap: 80px; /* Отступы между элементами */
+}
+
+.nav-item {
+  position: sticky; /* Для позиционирования псевдоэлемента */
+}
+
+.nav-item a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: #333; /* Цвет текста */
+  font-weight: 700; /* Полужирный шрифт */
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  display: block; /* Чтобы анимация работала по всей ширине */
+}
+
+
+.nav-item a:hover {
+    color: #8d8d8d; /* Изменяем цвет текста при наведении */
+}
+
+/*Анимация подчеркивания*/
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+    transform: scaleX(0); /* Начальное состояние, подчеркивания нет */
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+}
+
+.nav-item a:hover::before {
+  transform: scaleX(1); /* Подчеркивание на всю длину при наведении */
+}
+
+
+/* Анимация изменения размера */
+.nav-item a {
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+    transform: scale(1.1);
+}
+
+.video-container {
+  border-radius: 50px;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  padding: 30px 0;
+  color: #000;
+  position: relative; /* Для позиционирования псевдоэлемента */
+  overflow: hidden; /* Скрываем лишнее подчеркивание */
+    transition: transform 0.3s ease; /* Плавное изменение размера */
+}
+
+h1:hover {
+  color: #8d8d8d; /* Изменяем цвет текста при наведении */
+  transform: scale(1.1); /* Увеличиваем размер при наведении */
+}
+
+/* Анимация подчеркивания */
+h1::before {
+  content: "";
+  position: absolute;
+  bottom: 10px; /* Позиционируем подчеркивание ниже текста */
+  left: 50%; /* Центрируем подчеркивание */
+  width: 0; /* Изначальная ширина равна 0 */
+  height: 2px;
+  background-color: #8d8d8d; /* Цвет подчеркивания */
+  transform: translateX(-50%); /* Корректируем положение для центрирования */
+    transition: width 0.3s ease;
+}
+
+h1:hover::before {
+    width: 30%; /* Растягиваем подчеркивание при наведении */
+}
+
+
+
+h2{
+  padding: 0;
+  margin: 0;
+  padding: 30px 0;
+  color: #000;
+}
+
+
+.books_list{
+  display: flex;
+  flex-direction: row; /* Расположение в виде СТРОКИ */
+  flex-wrap: wrap; /* Если недостаточно места, то объект (книга) переносится на следующую строку (вниз) */
+}
+
+.book{
+  display: flex;
+  flex-direction: column; /* Расположение в виде колонки */
+  gap: 20px; /* Расстояние между картинкой и текстом под ней */
+}
+
+.info1{
+  display: flex;
+  flex-direction: row; /* Расположение в виде СТРОКИ */
+  gap: 20px;  /* Расстояние между картинкой и текстом СПРАВА */
+}
+
+.books_list img {
+  width: 200px;   /* Задаём ширину */
+  height: 325px;  /* Задаём высоту */
+  border-radius: 20px;
+}
+
+.books_list1{
+  display: flex;
+  flex-direction: row; /* Расположение в виде СТРОКИ */
+  flex-wrap: wrap; /* Если недостаточно места, то объект (книга) переносится на следующую строку (вниз) */
+}
+
+.book{
+  display: flex;
+  flex-direction: column; /* Расположение в виде колонки */
+  gap: 20px; /* Расстояние между картинкой и текстом под ней */
+}
+
+.info1{
+  display: flex;
+  flex-direction: row; /* Расположение в виде СТРОКИ */
+  gap: 20px;  /* Расстояние между картинкой и текстом СПРАВА */
+}
+
+.books_list1 img {
+  width: 200px;   /* Задаём ширину */
+  height: 325px;  /* Задаём высоту */
+  border-radius: 20px;
+}
+
+.books_list1 p{
+  color: #ffffff; 
+}
+
+
+.books_list img {
+  transform: scale(1); /* Начальный масштаб */
+  transition: transform 0.3s ease-in-out; /* Плавное изменение масштаба за 0.3 секунды */
+}
+
+.books_list img:hover {
+transform: scale(1.1); /* Масштаб при наведении */
+}
+
+.books_list1 img {
+  transform: scale(1); /* Начальный масштаб */
+  transition: transform 0.3s ease-in-out; /* Плавное изменение масштаба за 0.3 секунды */
+}
+
+.books_list1 img:hover {
+transform: scale(1.1); /* Масштаб при наведении */
+}
+
+
+footer {
+  background-color: #383838;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px; /* Ограничение ширины */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+    width: 25%; /* Ширина секции (25% чтобы в строке было 4 секции)*/
+  padding: 10px;
+  box-sizing: border-box; /* чтобы отступы не добавляли ширину */
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+    font-size: 1.2em; /* размер заголовка */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; /*  отступы между ссылками */
+}
+
+.footer-section a {
+  color: #fff;
+    text-decoration: none; /* убираем подчеркивание */
+}
+
+.footer-bottom {
+  text-align: center;
+    margin-top: 20px;
+     padding-top: 10px;
+  border-top: 1px solid #555;
+}
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+    .footer-section {
+      width: 50%; /* Ширина секции на мобильных устройствах (в строке 2 секции)*/
+    }
+     .footer-section:last-child {
+         width: 100%;
+      }
+    .footer-content {
+      flex-direction: column;
+    }
+}

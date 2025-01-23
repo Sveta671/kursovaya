@@ -1,0 +1,204 @@
+body {
+    background: linear-gradient(to bottom, white, white, rgb(177, 177, 177), rgb(105, 105, 105), black, black, black,  black, black, black);
+    min-height: 100vh;
+  }
+  
+  
+  .site-name h2{
+      font-family: 'Grenze';
+      color: black;
+      font-weight: 800;
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+  }
+  
+  p{
+      font-weight: 1000;
+      font-family: 'Grenze';
+      background-image: linear-gradient(to bottom, black, black, white, white);
+      background-clip: text;
+      color: transparent; /* Делаем цвет текста прозрачным */
+  display: inline-block; 
+  font-size: 24px
+  }
+  
+  
+  .site-name h2{
+      color: rgb(0, 0, 0);
+      font-weight: 900;
+      position: sticky;
+      top: 0;
+      background-color: #ffffff;
+  }
+  
+  h2{
+    padding: 0;
+     margin: 0;
+      justify-content: center; /* Выравниваем по центру горизонтально */  
+    padding: 30px 0;
+      color: #000;
+     }
+  
+
+     .book{
+        display: flex;
+        flex-direction: column; /* Расположение в виде колонки */
+        gap: 20px; /* Расстояние между картинкой и текстом под ней */
+      }
+      .info1{
+        display: flex;
+        flex-direction: row; /* Расположение в виде СТРОКИ */
+        gap: 20px;  /* Расстояние между картинкой и текстом СПРАВА */
+      }
+      
+      .book img {
+        width: 200px;   /* Задаём ширину */
+        height: 325px;  /* Задаём высоту */
+        border-radius: 20px;
+      }
+
+      .nazv{
+        font-weight: 1000;
+        font-family: 'Grenze';
+        color: #000000;
+    }
+
+    .button-container {
+        display: flex; /* Используем flexbox для расположения в ряд */
+        justify-content: center; /* Центрируем по горизонтали */
+        align-items: center; /* Центрируем по вертикали (если нужно) */
+          margin: 20px auto; /* отступ сверху и снизу, авто выравнивание по центру */
+          max-width: 1000px; /* Ограничиваем максимальную ширину контейнера*/
+      }
+      
+      .button {
+        background-color: #b8b8b8; /* Серый цвет фона */
+        color: #333; /* Темный цвет текста */
+        border: none; /* Убираем границу */
+        padding: 10px 20px; /* Отступы внутри кнопки */
+        margin: 0 60px; /* Отступы между кнопками */
+        border-radius: 25px; /* Закругленные края */
+        cursor: pointer; /* Изменяем курсор при наведении */
+          font-size: 1em; /* Размер шрифта*/
+        transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+      }
+      
+      .button:hover {
+          background-color: #8f8f8f; /* Более темный серый при наведении*/
+      }
+
+      .books_list{
+        display: flex;
+        flex-direction: row; /* Расположение в виде СТРОКИ */
+        flex-wrap: wrap; /* Если недостаточно места, то объект (книга) переносится на следующую строку (вниз) */
+      }
+      
+      .book{
+        display: flex;
+        flex-direction: column; /* Расположение в виде колонки */
+        gap: 20px; /* Расстояние между картинкой и текстом под ней */
+      }
+      
+      .info1{
+        display: flex;
+        flex-direction: row; /* Расположение в виде СТРОКИ */
+        margin: 0 40px;  /* Расстояние между картинкой и текстом СПРАВА */
+      }
+      
+      .books_list img {
+        width: 200px;   /* Задаём ширину */
+        height: 325px;  /* Задаём высоту */
+        border-radius: 20px;
+      }
+
+      .pk{
+        font-weight: 1000;
+        font-family: 'Grenze';
+        color: #a1a1a1;
+    }
+
+    .info2{
+        font-weight: 1000;
+        font-family: 'Grenze';
+        color: #a1a1a1;
+    }
+
+.chit{
+    font-weight: 1000;
+        font-family: 'Grenze';
+        color: #a1a1a1;
+}
+
+.chit:hover{
+    color: #ffffff;
+}
+
+
+footer {
+    background-color: #383838;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 1200px; /* Ограничение ширины */
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-section {
+      width: 25%; /* Ширина секции (25% чтобы в строке было 4 секции)*/
+    padding: 10px;
+    box-sizing: border-box; /* чтобы отступы не добавляли ширину */
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 10px;
+      font-size: 1.2em; /* размер заголовка */
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+      margin-bottom: 5px; /*  отступы между ссылками */
+  }
+  
+  .footer-section a {
+    color: #fff;
+      text-decoration: none; /* убираем подчеркивание */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+      margin-top: 20px;
+       padding-top: 10px;
+    border-top: 1px solid #555;
+  }
+  /* Адаптация под мобильные устройства */
+  @media (max-width: 768px) {
+      .footer-section {
+        width: 50%; /* Ширина секции на мобильных устройствах (в строке 2 секции)*/
+      }
+       .footer-section:last-child {
+           width: 100%;
+        }
+      .footer-content {
+        flex-direction: column;
+      }
+  }
+
+  footer .ft{
+    font-weight: 1000;
+        font-family: 'Grenze';
+        color: #000000;
+  }
