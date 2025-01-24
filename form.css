@@ -13,10 +13,10 @@ body {
       background-color: #ffffff;
   }
   
-  p{
+  .op{
       font-weight: 1000;
       font-family: 'Grenze';
-      background-image: linear-gradient(to bottom, black, black, white, white);
+      background-image: linear-gradient(to bottom, black, black, black, white, white);
       background-clip: text;
       color: transparent; /* Делаем цвет текста прозрачным */
   display: inline-block; 
@@ -195,10 +195,4 @@ footer {
       .footer-content {
         flex-direction: column;
       }
-  }
-
-  footer .ft{
-    font-weight: 1000;
-        font-family: 'Grenze';
-        color: #000000;
   }
