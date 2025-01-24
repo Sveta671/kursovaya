@@ -36,6 +36,24 @@ h2{
     color: #000;
    }
 
+   #register-button {
+    display: inline-block; /* Важно для правильного отображения padding и margin */
+    background-color: #ffffff; /* Светло-серый фон */
+    color: #333; /* Темно-серый текст */
+    padding: 10px 20px;
+    text-decoration: none; /* Убираем подчеркивание у ссылки */
+    border: 1px solid #ddd; /* Тонкая серая граница */
+    border-radius: 15px; /* Закругленные углы */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Плавный переход при наведении */
+    font-family: 'Grenze'; /* Шрифт, подходящий для книг */
+    font-weight: bold; /* Жирный шрифт */
+  }
+  
+  #register-button:hover {
+    background-color: #e0e0e0; /* Чуть темнее при наведении */
+    color: #222; /* Темнее текст при наведении */
+  }
+
 .search {
   display: flex;
   align-items: center; 
@@ -307,7 +325,7 @@ footer {
 /* Адаптация под мобильные устройства */
 @media (max-width: 768px) {
     .footer-section {
-      width: 50%; /* Ширина секции на мобильных устройствах (в строке 2 секции)*/
+      width: 100%; /* Ширина секции на мобильных устройствах (в строке 2 секции)*/
     }
      .footer-section:last-child {
          width: 100%;
@@ -316,3 +334,42 @@ footer {
       flex-direction: column;
     }
 }
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) { /* Таблеты */
+  .nav-list {
+    flex-direction: column; /* Меняем направление на столбец */
+    text-align: center;
+  }
+  .nav-item {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) { /* Мобильные телефоны */
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-item {
+        margin: 5px 0;
+    }
+  p{
+    font-size: 16px;
+  }
+}
+
+
+.register-button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+ }
+          
+.register-button:hover {
+     background-color: #555;
+}
+      
